@@ -1,0 +1,45 @@
+
+
+class Student {
+String firstname;
+String lastname;
+String regid;
+Double Score;
+
+void setfirstname(String fn){
+firstname=fn;
+}
+void setlastname(String ln){
+lastname = ln;
+}
+void setregid(String rg){
+regid = rg;
+}
+void setScore(Double sc){
+Score = sc;
+}
+public String getfirstname(){
+return firstname;
+}
+public String getlastname(){
+return lastname;
+}
+public String getregid(){
+return regid;
+}
+public Double getscore(){
+return Score;
+}
+public class StudentDemo{
+public static void main(String args[]){
+Student s1 = new Student();
+s1.setfirstname("ch");
+s1.setlastname("Sandeep");
+s1.setregid("23pa1a0543");
+s1.setScore(10.0);
+System.out.println(s1.getfirstname()+" "+ s1.getlastname());
+System.out.println(s1.getregid()+" "+s1.getScore());
+}
+}
+}
+
